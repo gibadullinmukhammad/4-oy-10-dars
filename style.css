@@ -1,0 +1,23 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+
+.card__hover{
+    transition: 1s;
+}
+
+.card__hover:hover {
+    background: #A8FF35;
+}
+
+
+.btn__hover{
+    transition: 1s;
+}
+
+.btn__hover:hover{
+    background: #000000;
+    color: #fff;
+}

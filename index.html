@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vite + Tailwind CSS</title>
+  </head>
+  <body>
+    <header class="bg-[#000000] py-7">
+      <nav class="container flex justify-between items-center">
+        <div>
+          <img
+            class="hidden tablet:block"
+            src="./images/Logo (2).png"
+            alt=""
+          />
+          <img class="tablet:hidden" src="./images/Logo (2).png" alt="" />
+        </div>
+        <div>
+          <ul class="hidden tablet:flex tablet:gap-10">
+            <li>
+              <a
+                class="text-[18px] font-normal leading-[18px] text-[#FFFFFF]"
+                href="#"
+                >About</a
+              >
+            </li>
+            <li>
+              <a
+                class="text-[18px] font-normal leading-[18px] text-[#FFFFFF]"
+                href="#"
+                >How it works</a
+              >
+            </li>
+            <li>
+              <a
+                class="text-[18px] font-normal leading-[18px] text-[#FFFFFF]"
+                href="#"
+                >Pricing</a
+              >
+            </li>
+            <li>
+              <a
+                class="text-[18px] font-normal leading-[18px] text-[#FFFFFF]"
+                href="#"
+                >Solution</a
+              >
+            </li>
+            <li>
+              <a
+                class="text-[18px] font-normal leading-[18px] text-[#FFFFFF]"
+                href="#"
+                >Features</a
+              >
+            </li>
+          </ul>
+        </div>
+        <div class="hidden tablet:flex tablet:gap-10 tablet:items-center">
+          <a
+            class="text-[18px] font-normal leading-[18px] text-[#FFFFFF]"
+            href="#"
+            >Login</a
+          >
+          <button
+            class=" btn__hover text-[18px] flex items-center font-normal leading-[18px] text-[#000000] w-[129px] h-[42px] p-[12px_32px] gap-[10px] rounded-[40px] bg-[#FFFFFF]"
+          >
+            Register
+          </button>
+        </div>
+
+        <div class="menu relative">
+          <div class="menu-icon flex tablet:hidden" onclick="toggleMenu()">
+            <img src="./images/button-burger.svg" alt="menu" />
+          </div>
+          <div
+            class="menu-content hidden fixed top-0 left-0 right-0 bottom-0 bg-black flex flex-col justify-center items-center z-50 transition-all duration-300"
+            id="menu-content"
+          >
+            <span
+              class="close-btn flex justify-between items-center w-full p-5 px-5 absolute top-0"
+              onclick="toggleMenu()"
+            >
+              <img src="./images/Vector.svg" alt="" />
+              <img src="./images/button-x.svg" alt="close" />
+            </span>
+            <ul class="gap-10 flex  flex-col text-center mt-16">
+              <li>
+                <a
+                  class="text-[18px] font-normal leading-[18px] text-[#FFFFFF]"
+                  href="#"
+                  >About</a
+                >
+              </li>
+              <li>
+                <a
+                  class="text-[18px] font-normal leading-[18px] text-[#FFFFFF]"
+                  href="#"
+                  >How it works</a
+                >
+              </li>
+              <li>
+                <a
+                  class="text-[18px] font-normal leading-[18px] text-[#FFFFFF]"
+                  href="#"
+                  >Pricing</a
+                >
+              </li>
+              <li>
+                <a
+                  class="text-[18px] font-normal leading-[18px] text-[#FFFFFF]"
+                  href="#"
+                  >Solution</a
+                >
+              </li>
+              <li>
+                <a
+                  class="text-[18px] font-normal leading-[18px] text-[#FFFFFF]"
+                  href="#"
+                  >Features</a
+                >
+              </li>
+            </ul>
+            <div class="items-center mt-5 text-center">
+              <a
+                class="text-[18px] font-normal leading-[18px] text-[#FFFFFF] px-10"
+                href="#"
+                >Login</a
+              >
+              <div class="my-4">
+                <button
+                  class="text-[18px] flex items-center font-normal leading-[18px] text-[#000000] w-[129px] h-[42px] p-[12px_32px] gap-[10px] rounded-[40px] bg-[#FFFFFF]"
+                >
+                  Register
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </nav>
+      <script>
+        function toggleMenu() {
+          const menuContent = document.getElementById("menu-content");
+          menuContent.classList.toggle("hidden");
+        }
+      </script>
+    </header>
+
+    <main>
+
+      <section class="bg-black">
+
+        <div class="container">
+          <div class="wrapper  ">
+
+            <div>
+
+              <h1 class="text-white text-3xl	pt-[56px] text-36px font-black  text-center tablet:text-6xl	tablet:pt-[80px]">
+                Minimize your tabs. <br>
+                Find the trends!
+              </h1>
+
+              <p class="text-[#8B8B8B] text-center mt-[16px] tablet:mt-[34px]">Don’t let your computer memories consumes all of those browser tabs. <br>
+                Findtrend  let you gathers all of your favorite website into one place.</p>
+
+                <div class="flex justify-center mt-[44px] tablet:mt-[60px] ">
+                  <button class="bg-[#A8FF35] rounded-[40px] py-[12px] px-[24px] btn__hover">Get Started 🔥</button>
+                </div>
+
+                <div class="pt-[70px]  tablet:flex tablet:flex-row tablet:gap-[100px] tablet:mt-[70px] tablet:pb-[50px]">
+                  <img class="" src="./images/hero-icon1.png" alt="">
+                  <img class="" src="./images/hero-icon1.png" alt="">
+                  <img class="" src="./images/hero-icon1.png" alt="">
+                </div>
+
+            </div>
+
+          </div>
+        </div>
+
+      </section>
+
+      <section class="bg-[#A8FF35]">
+
+        <div class="info-wrapper">
+
+          <div>
+            <h2 class="text-center text-[#000000] font-bold text-4xl	pt-[80px] tablet:text-6xl	">Open new tabs is sh*t </h2>
+
+            <div class="flex justify-center"> 
+              <div class="flex justify-center items-center w-[330px] h-[110px] bg-[#ffff] rounded-[14px] mt-[80px] tablet:w-[500px] tablet:h-[200px]">
+                <img class="w-[290px] h-[60px] tablet:w-[340px] tablet:h-[80px]" src="./images/Group 427321661.png" alt="">
+              </div>
+            </div>
+              
+            <p class="text-[#000000] text-sm	font-normal	mt-[70px] text-center pb-[70px] tablet:text-base">A solution for your browser tabs and don’t make your device get slower over time. Get <br> ease and faster to discover a trend with just one tab.</p>
+
+          </div>
+
+        </div>
+
+      </section>
+
+      <section>
+        <div class="container">
+
+          <h3 class="text-3xl	font-black mt-[80px] text-center tablet:text-5xl	tablet:mt-[140px]">
+            Findtrend helps you to increase your 
+            productivity and reduce your computer's
+          </h3>
+          <span class="text-3xl	font-black text-[#ADADAD] text-center tablet:text-5xl">memory load, an application that can 
+            fulfill your daily browsing needs.
+          </span>
+
+          <h3 class="text-4xl	font-black	mt-[150px] text-center">Findtrend make +1000 Startup grow</h3>
+
+          <div class="icon__wrapper grid grid-cols-2 gap-[14px] mt-[32px] tablet:grid-cols-4 tablet:mt-[80px] pb-[70px]">
+
+            <img src="./images/1.png" alt="">
+            <img src="./images/1.png" alt="">
+            <img src="./images/1.png" alt="">
+            <img src="./images/1.png" alt="">
+            <img src="./images/1.png" alt="">
+            <img src="./images/1.png" alt="">
+            <img src="./images/1.png" alt="">
+            <img src="./images/1.png" alt="">
+            <img src="./images/1.png" alt="">
+            <img src="./images/1.png" alt="">
+            <img src="./images/1.png" alt="">
+            <img src="./images/1.png" alt="">
+            <img src="./images/1.png" alt="">
+            <img src="./images/1.png" alt="">
+            <img src="./images/1.png" alt="">
+            <img src="./images/1.png" alt="">
+
+          </div>
+
+        </div>
+      </section>
+
+      <section class="bg-[#FAFAFA]">
+        <div class="container">
+
+          <div class="wrapper">
+
+            <div>
+
+              <h3 class="font-black	text-center text-3xl	pt-[80px]">All platform connect to Findtrend</h3>
+
+
+              <div class="flex gap-[6px] mt-[80px] text-center tablet:gap-[50px] justify-center ">
+                <img src="./images/Group 33.png" alt="">
+                <img src="./images/Group 33.png" alt="">
+                <img src="./images/Group 33.png" alt="">
+                <img src="./images/Group 33.png" alt="">
+                <img src="./images/Group 33.png" alt="">
+              </div>
+
+              <img class="mt-[32px] flex tablet:hidden" src="./images/tweet 1.png" alt="">
+
+              <img class="mt-[20px] flex tablet:hidden" src="./images/tweet 2.png" alt="">
+
+              <img class="mt-[32px] flex tablet:hidden" src="./images/tweet 1.png" alt="">
+
+
+              <div class="tablet:flex justify-center mt-[77px] hidden ">
+                <img src="./images/tablet-img1.png" alt="">
+              </div>
+
+              <div class="tablet:flex hidden justify-center mt-[40px]">
+                <img src="./images/tablet-img2.png" alt="">
+              </div>
+
+              <div class="tablet:flex justify-center mt-[77px] hidden ">
+                <img src="./images/tablet-img1.png" alt="">
+              </div>
+
+
+              <div class="flex justify-center mt-[32px] pb-[85px]">
+                <button class= "btn__hover bg-black rounded-[40px] text-[#fff] py-[12px] px-[20px]">View More Trend</button>
+              </div>
+
+            </div>
+
+          </div>
+
+        </div>
+      </section>
+
+      <section class="bg-black">
+        <div class="container">
+        
+            <h2 class="text-[#fff] text-center pt-[74px] font-black text-3xl	tablet:font-bold	tablet:text-6xl	tablet:mt-[20px]">Get your best deal</h2>
+
+            <div class="flex justify-center items-center gap-[34px] mt-[32px] tablet:mt-[50px]">
+              <span class="text-[#ffff] tablet:text-2xl	">Monthly </span>
+              <img src="./images/Group 427321656.png" alt="">
+              <span class="text-[#F5F5F5] tablet:text-2xl">Yearly</span>
+            </div>
+          
+          <div class="wrapper grid grid-cols-1 gap-[24px] tablet:grid-cols-3 pb-[100px]">
+
+            <div class="bg-white rounded-[20px] card__hover mt-[70px]">
+              <h2 class="ml-[30px] pt-[30px] mt-[30px] text-3xl	">Personal</h2>
+              <p class="ml-[30px] mt-[14px]">Special first packet for all</p>
+              <hr>
+              <div class="flex gap-[8px]">
+                <h3 class="ml-[30px] mt-[32px] font-semibold	text-6xl	">$8</h3>
+                <span class="mt-[62px] " >/Month</span>
+              </div>
+              <img class="ml-[30px] mt-[24px]" src="./images/Group 973.png" alt="">
+              <img class="ml-[30px] mt-[24px]" src="./images/Group 973.png" alt="">
+              <img class="ml-[30px] mt-[24px]" src="./images/Group 973.png" alt="">
+
+              <div class="flex justify-center pb-[40px]">
+                <button class="bg-[#A8FF35] py-[14px] px-[34px] rounded-[40px] mt-[184px] btn__hover  tablet:mt-[110px]">Start Free Trial</button>
+              </div>
+
+            </div>
+
+
+            <div class="bg-white rounded-[20px] card__hover mt-[70px]" >
+              <h2 class="ml-[30px] pt-[30px] mt-[30px] text-3xl	">Personal</h2>
+              <p class="ml-[30px] mt-[14px]">Special first packet for all</p>
+              <hr>
+              <div class="flex gap-[8px]">
+                <h3 class="ml-[30px] mt-[32px] font-semibold	text-6xl	">$20</h3>
+                <span class="mt-[62px] " >/Month</span>
+              </div>
+              <img class="ml-[30px] mt-[24px]" src="./images/Group 973.png" alt="">
+              <img class="ml-[30px] mt-[24px]" src="./images/Group 973.png" alt="">
+              <img class="ml-[30px] mt-[24px]" src="./images/Group 973.png" alt="">
+
+              <div class="flex justify-center pb-[40px]">
+                <button class="bg-[#A8FF35] py-[14px] px-[34px] rounded-[40px] mt-[184px] btn__hover  tablet:mt-[110px]">Start Free Trial</button>
+              </div>
+
+            </div>
+
+
+            <div class="bg-white rounded-[20px] card__hover mt-[70px] ">
+              <h2 class="ml-[30px] pt-[30px] mt-[30px] text-3xl	">Personal</h2>
+              <p class="ml-[30px] mt-[14px]">Special first packet for all</p>
+              <hr>
+              <div class="flex gap-[8px]">
+                <h3 class="ml-[30px] mt-[32px] font-semibold	text-6xl	">$48</h3>
+                <span class="mt-[62px] " >/Month</span>
+              </div>
+              <img class="ml-[30px] mt-[24px]" src="./images/Group 973.png" alt="">
+              <img class="ml-[30px] mt-[24px]" src="./images/Group 973.png" alt="">
+              <img class="ml-[30px] mt-[24px]" src="./images/Group 973.png" alt="">
+
+              <div class="flex justify-center pb-[40px]">
+                <button class="bg-[#A8FF35] py-[14px] px-[34px] rounded-[40px] mt-[184px] btn__hover tablet:mt-[110px]">Start Free Trial</button>
+              </div>
+
+            </div>
+
+            
+
+          </div>
+
+
+        </div>
+      </section>
+
+      <section class="bg-[#A8FF35] pb-[80px] ">
+        <div class="container">
+          <div class="text-center">
+            <h2 class=" font-black	text-3xl	 tablet:text-7xl	pt-[80px]">Join us on email for</h2>
+            <h2 class="font-black	text-3xl	 tablet:text-7xl text-[#0000005e]">more trending topics</h2>
+            <button class="bg-black text-[#ffff] py-[12px] px-[24px] rounded-[40px] mt-[32px] ">Join Now </button>
+          </div>
+        </div>
+      </section>
+
+
+
+    </main>
+
+    <footer>
+      <div class="container">
+        <div class="wrapper gap-[80px] flex justify-center flex-col items-center pt-[50px] pb-[40px] tablet:flex tablet:flex-row tablet:gap-[400px]">
+
+          <div>
+            <img src="./images/Frame.png" alt="">
+          </div>
+
+          <div class="flex flex-col gap-[40px] tablet:flex-row">
+            <p>Privacy Policy</p>
+            <p>Terms and Conditions</p>
+            <p>Privacy Policy</p>
+            <p>Contact Us</p>
+          </div>
+
+        </div>
+      </div>
+    </footer>
+
+    <script type="module" src="./main.js"></script>
+  </body>
+</html>
